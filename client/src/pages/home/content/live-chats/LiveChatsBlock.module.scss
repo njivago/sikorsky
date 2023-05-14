@@ -1,0 +1,48 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+
+.wrapper {
+    width: 35vw;
+    margin: 5em 15em 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background-color: $color_Primary;
+    border-radius: 20px;
+    height: fit-content;
+    min-height: 30%;
+
+    ul {
+        width: 100%;
+    }
+
+    @include for-tablets {
+        width: auto;
+        min-height: 10em;
+        height: auto;
+        margin: 2em;
+    }
+}
+
+.heading {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 3px solid $color_Secondary;
+}
+
+.room {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.key {
+    word-wrap: break-word;
+}
+
+.join {
+    width: 20% !important;
+}

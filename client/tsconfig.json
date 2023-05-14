@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "jsx": "react-jsx",
+    "module": "es6",
+    "moduleResolution":"node",
+    "target": "es5",
+    "allowJs": true,
+    "paths": { 
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@assets/*": ["./src/assets/*"],
+			"@services/*": ["./src/services/*"],
+			"@utils/*": ["./src/utils/*"],
+      "@pages/*": ["./src/pages/*"]
+		}
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/**/*.ts",
+    "**/**/*.tsx",
+    "**/*.module.scss",
+    "**/**/*.module.scss"
+  ],
+  "files": ["src/index.tsx"]
+}

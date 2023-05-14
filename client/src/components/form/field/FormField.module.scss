@@ -1,0 +1,46 @@
+@import '../../../assets/styles/_variables.scss';
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 360px;
+    background-color: transparent !important;
+    color: $color_Black;
+    border: none;
+    border-bottom: 2px solid $color_Black;
+    font-size: $fontSize_Medium;
+    transition: all .2s ease-in;
+    padding: 0.3em;
+    outline: 0;
+
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+        border-bottom: 2px solid $color_Black_Action;
+    
+        + .label {
+            left: -0.1em;
+            top: -1.2em;
+        }
+        
+        &::placeholder {
+            color: $color_Black_Action;
+        }
+    }
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 0.4em;
+    pointer-events: none;
+    font-size: $fontSize_Medium;
+    transition: top .3s ease-out, left .3s ease-out;
+}

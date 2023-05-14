@@ -1,0 +1,16 @@
+@import '../../assets/styles/_variables.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    background-color: $color_Primary;
+}
+
+.logo {
+    height: 3em;
+}
+
+.logout {
+    width: 6em !important;
+}

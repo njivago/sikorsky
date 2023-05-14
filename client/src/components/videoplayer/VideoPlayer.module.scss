@@ -1,0 +1,61 @@
+@import '../../assets/styles/variables';
+
+.control {
+    background-color: $color_Black;
+    color: $color_White;
+    border-radius: 20px;
+    padding: 0.5em;
+    border: none;
+    transition: background-color .2s ease-in;
+
+    svg {
+        vertical-align: middle;
+        transition: currentColor .2s ease-in;
+    }
+
+    &:hover {
+        background-color: $color_Black_Action;
+        color: $color_Danger;
+        cursor: pointer;
+    }
+}
+
+.controls {
+    position: absolute;
+    display: flex;
+    bottom: 1em;
+    left: 45%;
+    gap: 2em;
+}
+
+.wrapper {
+    background-color: $color_Black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+    padding: 5em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: purple 3px solid;
+    border-radius: 90%;
+    width: 30% !important;
+    overflow: hidden;
+    margin: 0 2em;
+}
+
+.video {
+    margin: 0 auto;
+    width: 420px;
+    height: 320px;
+}
+
+.name {
+    color: $color_White;
+}

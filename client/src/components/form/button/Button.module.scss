@@ -1,0 +1,34 @@
+@import '../../../assets/styles/_variables.scss';
+
+.primary {
+    background-color: $color_Primary;
+    color: $color_Black;
+
+    &:hover {
+        background-color: $color_Primary_Active;
+    }
+}
+
+.secondary {
+    background-color: $color_Black;
+    color: $color_White;
+
+    &:hover {
+        background-color: $color_Black_Action;
+    }
+}
+
+.btn {
+    width: 100%;
+    height: fit-content;
+    padding: 0.4em;
+    border-radius: 2px;
+    text-align: center;
+    transition: background-color .2s ease-in;
+    border: none;
+    font-size: $fontSize_Medium;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,5 @@
+@mixin for-tablets {
+    @media (max-width: 900px) and (min-width: 300px) {
+        @content;
+    }
+}
